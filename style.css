@@ -5,9 +5,9 @@ body {
     background: linear-gradient(to right, #ff5f6d, #ffc371);
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
 }
 
 .container {
@@ -88,64 +88,65 @@ button {
     right: -30px;
 }
 
-body {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-}
-
 .gif-container img {
 	width: 100%;
 	max-width: 400px;
 	border-radius: 10px;
 	margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .collage {
 	position: relative;
 	width: 90%;
 	max-width: 400px;
-	height: 450px;
+	height: 900px;
 }
 
 .collage img {
-	width: 120px;
-	height: 120px;
+	width: 200px;
+	height: 200px;
 	object-fit: cover;
 	border-radius: 10px;
+    border: solid white 5px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 	position: absolute;
 }
 
-/* Positioning images to overlap like the reference image */
 .collage img:nth-child(1) {
 	top: 0;
-	left: 50%;
-	transform: translateX(-50%) rotate(-5deg);
+	left: 10px;
+    transform: rotate(-5deg);
 }
 
 .collage img:nth-child(2) {
-	top: 80px;
-	left: 10%;
+	top: 170px;
+	right: 10px;
 	transform: rotate(5deg);
 }
 
 .collage img:nth-child(3) {
-	top: 120px;
-	left: 60%;
-	transform: rotate(-3deg);
+	top: 340px;
+	left: 10px;
+	transform: rotate(-5deg);
 }
 
 .collage img:nth-child(4) {
-	top: 200px;
-	left: 20%;
-	transform: rotate(4deg);
+	top: 510px;
+	right: 10px;
+	transform: rotate(5deg);
+}
+
+.collage img:nth-child(5) {
+	top: 680px;
+	left: 10px;
+	transform: rotate(-5deg);
 }
 
 .thank-you-text {
 	font-family: "Dancing Script", cursive;
 	font-size: 24px;
 	font-weight: bold;
-	margin-top: 20px;
+	margin-top: 30px;
+    margin-bottom: 20px;
 }
